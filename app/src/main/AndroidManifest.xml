@@ -13,6 +13,13 @@
         android:theme="@style/Theme.DatVeXemPhim"
         tools:targetApi="31">
         <activity
+            android:name=".ChonRapPhim"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".chi_tiet_phim"
             android:exported="false">
             <meta-data
