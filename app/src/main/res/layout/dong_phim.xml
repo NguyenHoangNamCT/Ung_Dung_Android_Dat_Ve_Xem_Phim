@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="100"
+    >
+
+
+    <ImageView
+        android:id="@+id/imgHinhPhim"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_weight="35">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <TextView
+            android:id="@+id/txtTieuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:text="Tiêu đề: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF0020">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:text="Thể loại: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF0020">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
