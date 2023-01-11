@@ -1,10 +1,12 @@
 package com.example.datvexemphim;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Phim implements Serializable {
     private String tenPhim, theLoai, ngayKhoiChieu, doDai, daoDien, cacDienVienChinh, tomTat;
     private int hinh;
+    private ArrayList<RapPhim> rapPhimArrayList;
 
     public Phim(String tenPhim, String theLoai, int hinh, String ngayKhoiChieu, String doDai, String daoDien, String cacDienVienChinh, String tomTat) {
         this.tenPhim = tenPhim;
@@ -15,6 +17,19 @@ public class Phim implements Serializable {
         this.daoDien = daoDien;
         this.cacDienVienChinh = cacDienVienChinh;
         this.tomTat = tomTat;
+        rapPhimArrayList = new ArrayList<>();
+        rapPhimArrayList.add(new RapPhim("GLX An Giang"));
+        rapPhimArrayList.add(new RapPhim("GLX Cần Thơ"));
+        rapPhimArrayList.add(new RapPhim("GLX Đồng Tháp"));
+        rapPhimArrayList.add(new RapPhim("GLX HCM"));
+    }
+
+    public ArrayList<RapPhim> getRapPhimArrayList() {
+        return rapPhimArrayList;
+    }
+
+    public void setRapPhimArrayList(ArrayList<RapPhim> rapPhimArrayList) {
+        this.rapPhimArrayList = rapPhimArrayList;
     }
 
     public String getTenPhim() {

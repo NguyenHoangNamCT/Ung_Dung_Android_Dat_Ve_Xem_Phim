@@ -14,14 +14,14 @@ public class chi_tiet_phim extends AppCompatActivity {
     ImageView imgHinhChiTiet;
     TextView txtTenPhim, txtKhoiChieu, txtTheLoai, txtDoDai, txtDaoDien, txtDienVien, txtTomTat;
     Button btnDatVe;
-
+    Phim phim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chi_tiet_phim);
         anhXa();
         Intent intent = getIntent();
-        Phim phim = (Phim) intent.getSerializableExtra("phimDuocChon");
+        phim = (Phim) intent.getSerializableExtra("phimDuocChon");
         txtTenPhim.setText(phim.getTenPhim());
         txtTheLoai.setText(phim.getTheLoai());
         imgHinhChiTiet.setImageResource(phim.getHinh());
@@ -35,8 +35,8 @@ public class chi_tiet_phim extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(chi_tiet_phim.this, ChonRapPhim.class);
-                intent.putExtra("phimDuocChon", phim);
-                startActivity(intent);
+                intent1.putExtra("phimDuocChon", phim);
+                startActivity(intent1);
             }
         });
     }
