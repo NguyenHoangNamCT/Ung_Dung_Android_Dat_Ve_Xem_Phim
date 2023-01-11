@@ -32,11 +32,11 @@ public class ChonGio extends AppCompatActivity {
         lsvGio.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Intent intent1 = new Intent(, ChonGio.class);
-//                intent1.putExtra("phimDuocChon", phim);
-//                intent1.putExtra("rapDuocChon", rapDuocChon);
-//                intent1.putExtra("gioDuocChon", i);
-//                startActivity(intent1);
+                Intent intent3 = new Intent(ChonGio.this, activeti_chonGhe.class);
+                intent3.putExtra("phimDuocChon", phim);
+                intent3.putExtra("rapDuocChon", rapDuocChon);
+                intent3.putExtra("gioDuocChon", i);
+                startActivity(intent3);
             }
         });
     }

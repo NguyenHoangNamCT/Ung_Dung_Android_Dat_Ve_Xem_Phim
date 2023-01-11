@@ -13,6 +13,13 @@
         android:theme="@style/Theme.DatVeXemPhim"
         tools:targetApi="31">
         <activity
+            android:name=".activeti_chonGhe"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ChonGio"
             android:exported="false">
             <meta-data

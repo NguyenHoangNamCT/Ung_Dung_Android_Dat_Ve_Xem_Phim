@@ -7,11 +7,67 @@
     tools:context=".MainActivity"
     android:background="#123">
 
+    <EditText
+        android:id="@+id/txtTenPhim"
+        android:layout_width="395dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Nhập thể loại phim"
+        android:textColorHint="#F18888"
+        android:textColor="#FF0000"
+        />
+
+    <EditText
+        android:id="@+id/txtTheLoai"
+        android:layout_width="395dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Nhập tên phim"
+        android:textColorHint="#F18888"
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/txtThoiGian"
+        android:layout_width="395dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Nhập độ dài phim"
+        android:textColorHint="#F18888"
+        android:textColor="#FF0000"/>
+
     <ListView
         android:id="@+id/lsvPhim"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="412dp"
+        android:layout_height="567dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
-    </ListView>
+        app:layout_constraintVertical_bias="1.0"></ListView>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="179dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="116dp"
+        android:text="Thêm phim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

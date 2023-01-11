@@ -9,10 +9,10 @@
     <ImageView
         android:id="@+id/imgHinhPhim"
         android:layout_width="172dp"
-        android:layout_height="198dp"
+        android:layout_height="271dp"
+        android:layout_marginStart="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </ImageView>
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <TextView
         android:id="@+id/txtTenPhim"
